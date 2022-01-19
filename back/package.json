@@ -1,0 +1,23 @@
+{
+  "name": "fasttech-test-back",
+  "version": "1.0.0",
+  "description": "Тестовое задание ООО Фастек, бекэнд",
+  "main": "index.js",
+  "author": "Ivan Milovanov <tequila00@yandex.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.26.0",
+    "fastify-cors": "^6.0.2",
+    "fastify-multipart": "^5.2.1",
+    "fastify-plugin": "^3.0.0",
+    "fastify-static": "^4.5.0",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start:dev": "nodemon --ignore 'db/*' --ignore 'upload/*' index.js",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
